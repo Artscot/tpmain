@@ -171,7 +171,13 @@ footer, .push {
   float: left;
 }
 
-
+/* signup page */
+.roundborder{
+   border-radius: 2px;
+}
+.displayblock{
+    display: block;
+}
 /* Media Queries */
 /* Smartphones (portrait) ----------- */
 @media only screen
