@@ -1,44 +1,78 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <title>@ViewBag.Title</title>
+
+    @Styles.Render("~/Content/bootstrap.min.css")
+    @Styles.Render("~/Content/mainStyle.css")
+    @Styles.Render("~/Content/themes/base/jquery-ui.min.css")
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <a class="navbar-brand" href="#">TP-ME</a>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a>@Html.ActionLink("Home", "Index", "Home")</a></li>
+                    <li><a>@Html.ActionLink("About", "About", "Home")</a></li>
+                    @Html.Partial("_LoginPartial")
                 </ul>
-                @Html.Partial("_LoginPartial")
+                
             </div>
         </div>
-    </div>
-    <div class="container body-content">
+    </nav>
+    <div class="container" id="wrapper">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+        <div class="push"></div>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img class="img-responsive center-block" src="https://placeholdit.imgix.net/~text?txtsize=14&txt=150%C3%97150&w=150&h=150" />
+                </div>
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="links">
+                                <li><a href="*">Home</a></li>
+                                <li><a href="*">About</a></li>
+                                <li><a href="*">Sign In</a></li>
+                                <li><a href="*">Register</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="links">
+                                <li><a href="*">Privacy</a></li>
+                                <li><a href="*">Feedback</a></li>
+                                <li><a href="*">Terms and Conditions</a></li>
+                                <li><a href="*">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 copyright">
+            <p>Copyright © 2016. <a href="#">TP-ME</a>. All rights reserved.</p>
+        </div>
+    </footer>
+    @Scripts.Render("~/scripts/jquery-3.1.1.min.js")
+    @Scripts.Render("~/scripts/bootstrap.min.js")
+    @Scripts.Render("~/scripts/jquery-ui-1.12.1.js")
+    @Scripts.Render("~/scripts/mainJS.js")
     @RenderSection("scripts", required: false)
 </body>
 </html>
+
+
+

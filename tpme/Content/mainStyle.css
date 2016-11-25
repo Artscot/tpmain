@@ -50,7 +50,14 @@ ul.ui-autocomplete {
 .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
 }
+.changethings{
 
+}
+.changethings:active,
+.changethings:hover{
+    color: white;
+    background-color: #8963BA;
+}
 /*Footer Changes*/
 .footer{
     margin-top: 5em;
@@ -178,6 +185,26 @@ footer, .push {
 .displayblock{
     display: block;
 }
+.changeSignup{
+    color: white;
+}
+.changeSignup .row .col-sm-8{
+    background-color:#8963BA;
+    padding: 50px;
+}
+.changeSignup .row .col-sm-4{
+    background-color: #54428E;
+    padding: 10px;
+    
+}
+.changeSignup .row .col-sm-4 h2{
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.5em;
+}
+/*Register Page*/
+.force{
+    width: 100% !important;
+}
 /* Media Queries */
 /* Smartphones (portrait) ----------- */
 @media only screen
@@ -199,6 +226,11 @@ and (max-width : 360px) {
         text-align:center;
         margin: 0.1em;
     }
+    .force{
+        width: 100% !important;
+        font-size: 1em;
+    }
+    
 }
 @media only screen
 and (max-width : 750px)

@@ -8,7 +8,43 @@
 @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {
     @Html.AntiForgeryToken()
-    <h4>Create a new account.</h4>
+    <div id="wrapper" class="container changeSignup">
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>Why Register....</h2>
+                <ul>
+                    <li>Connect with verified people</li>
+                    <li>Profile</li>
+                    <li>Friends system</li>
+                </ul>
+                <p><strong>What are you waiting for?</strong> We do not steal information.</p>
+            </div>
+            <div class="col-sm-8">
+                @Html.ValidationSummary("", new { @class = "text-danger" })
+                    <div class="form-group">
+                        @Html.TextBoxFor(m => m.userName, new { @class = "form-control gamename force", @placeholder = "Username" })
+                    </div>
+                    <div class="form-group">
+                        @Html.TextBoxFor(m => m.email, new { @class = "form-control gamename force", @placeholder = "Email" })
+                    </div>
+                    <div class="form-group">
+                        @Html.PasswordFor(m => m.password, new { @class = "form-control gamename force", @placeholder = "Password" })
+                    </div>
+                    <div class="form-group">
+                        @Html.PasswordFor(m => m.confirmPassword, new { @class = "form-control gamename force", @placeholder = "Confirm Password" })
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="submit" class="searchGame roundborder btn-block" value="Register" />
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+    </div>
+  
+    @*<h4>Create a new account.</h4>
     <hr />
     @Html.ValidationSummary("", new { @class = "text-danger" })
     <div class="form-group">
@@ -33,7 +69,8 @@
         <div class="col-md-offset-2 col-md-10">
             <input type="submit" class="btn btn-default" value="Register" />
         </div>
-    </div>
+    </div>*@
+    
 }
 
 @section Scripts {
