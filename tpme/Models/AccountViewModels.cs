@@ -89,7 +89,7 @@ namespace tpme.Models
 
         [DataType(DataType.Password)]
         [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        [Compare("password", ErrorMessage = "The password and confirmation password do not match.")]
         public string confirmPassword { get; set; }
     }
 
