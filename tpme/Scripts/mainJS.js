@@ -1,4 +1,5 @@
-﻿"use strict";
+﻿//Code By Arturs Timofejevs for api connection to the input bar.
+"use strict";
 $(document).ready(function () {
     
     $("#gamename1").autocomplete({

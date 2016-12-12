@@ -277,6 +277,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\IMG_205882.jpg" />
+    <Content Include="images\morgana-vs-ahri-league-of-legends-28226-1920x1080.jpg" />
+    <Content Include="images\overwatch-all-heroes-wallpaper-hd.jpg" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />

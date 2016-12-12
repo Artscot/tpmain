@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using tpme.Models;
 
 namespace tpme.Controllers
 {
@@ -10,8 +11,11 @@ namespace tpme.Controllers
     {
         public ActionResult Index()
         {
+
             return View();
+
         }
+
 
         public ActionResult About()
         {

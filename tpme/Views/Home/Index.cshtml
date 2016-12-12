@@ -1,4 +1,5 @@
-﻿@model tpme.Models.searchGameName
+﻿@* Added by Arturs Timofejevs *@
+@model tpme.Models.searchGameName
 @{
     ViewBag.Title = "TP-ME";
 }
@@ -17,11 +18,12 @@
         <div class="col-sm-2">
         </div>
         <div class="col-sm-8">
+
             @Html.TextBoxFor(m => m.gameName, new { @class = "gamename", @id = "gamename1" })
-            <input type="submit" onclick="location.href='@Url.Action("Chat", "Home")'" class="searchGame" value="GO" />   
+            
+            <a href="@Url.Action("Chat", "Home")" class="searchGame">GO</a>  
         </div>
         <div class="col-sm-2">
-            
             
         </div>
     </div>
@@ -33,13 +35,14 @@
             Top 3 games that people look to find a budy for!
         </p>
         <div class="col-sm-4">
-            1
+            <img src="~/Images/IMG_205882.jpg" class="img-responsive" />
+            
         </div>
-        <div class="col-sm-4">
-            1
+        <div class="col-sm-4 divimg">
+            <img src="~/Images/morgana-vs-ahri-league-of-legends-28226-1920x1080.jpg" class="img-responsive" />
         </div>
-        <div class="col-sm-4">
-            1
+        <div class="col-sm-4 divimg">
+            <img src="~/Images/overwatch-all-heroes-wallpaper-hd.jpg" class="img-responsive" />
         </div>
     </div>
 </div>
