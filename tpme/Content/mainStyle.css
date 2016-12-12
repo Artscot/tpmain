@@ -12,7 +12,35 @@ ul.ui-autocomplete {
     list-style-type: none;
 
 }
+/* Chatbox */
+.Content1{
+background-color:#8963BA;
+border: solid 1px #fff;
 
+}
+.chatContainer{
+background-color:#54428e;
+}
+#message{
+background-color:#d3d3d3;
+width:400px;
+height:100px;
+text-align:center;
+border:0.2em solid #8963BA;
+border-radius:0.2em;
+}
+
+#displayname{
+text-align:center;
+text-decoration:none;
+list-style:none;
+}
+#discussion li{
+overflow:hidden;
+padding:0.5em;
+display:flex;
+
+}
 /*Navbar changes*/
 .navbar-default{
    background-color: #54428E;

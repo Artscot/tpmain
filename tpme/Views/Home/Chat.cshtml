@@ -1,20 +1,22 @@
 ﻿@{
     ViewBag.Title = "Chat";
 }
-<div class="Content">
-    <h2 class="welcome">GameName</h2>
-    <div class="chatbox">
-        <div class="chatlogs">
-            <div class="chat">
-                <div class="user-photo"></div>
-                <ul id="discussion"></ul>
-                <input type="hidden" id="displayname" />
+<div class="chatContainer">
+    <div class="Content1">
+        <h2 class="welcome">GameName</h2>
+        <div class="chatbox">
+            <div class="chatlogs">
+                <div class="chat">
+                    <div class="user-photo"></div>
+                    <ul id="discussion"></ul>
+                    <input type="hidden" id="displayname" />
+                </div>
             </div>
-        </div>
 
-        <div class="chat-form">
-            <input type="text" id="message" />
-            <input type="button" value="Send" id="sendmessage" />
+            <div class="chat-form">
+                <input type="text" id="message" />
+                <input type="button" value="Send" id="sendmessage" />
+            </div>
         </div>
     </div>
 </div>
